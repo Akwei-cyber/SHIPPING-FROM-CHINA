@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Shipment | Ofak Trading Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-ship"></i>
+                    <h1>OFAK<span>TRADING</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="tracking.html" class="active">Tracking</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Track Your Shipment</h1>
+        <p class="text-center">Enter your tracking number to get real-time updates on your shipment from China to Ghana.</p>
+        
+        <div class="form-container">
+            <h3 class="sub-title">Track Shipment</h3>
+            <div class="form-group">
+                <label for="tracking-number">Tracking Number</label>
+                <input type="text" id="tracking-number" placeholder="Enter your 12-digit tracking number">
+            </div>
+            <button class="btn btn-wide" onclick="trackShipment()">
+                <i class="fas fa-search"></i> Track Now
+            </button>
+            
+            <div class="tracking-result" id="tracking-result">
+                <h4 class="status-header">Shipment Status</h4>
+                <div class="status-updates" id="status-updates"></div>
+            </div>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3><i class="fas fa-info-circle"></i> Tracking Information</h3>
+                <p>Your tracking number can be found on your shipping receipt or invoice. It typically starts with "OFAK" followed by 8 digits.</p>
+                <p><strong>Example:</strong> OFAK20251234</p>
+            </div>
+            
+            <div class="service-card">
+                <h3><i class="fas fa-question-circle"></i> Need Help?</h3>
+                <p>Can't find your tracking number? Contact our customer support:</p>
+                <p><i class="fas fa-phone"></i> +233 24 123 4567</p>
+                <p><i class="fas fa-envelope"></i> support@ofaktrading.com</p>
+            </div>
+        </div>
+        
+        <div class="timeline-container">
+            <h3 class="sub-title">Sample Tracking Status</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <h4>Shipment Received</h4>
+                    <p>Shanghai Warehouse, China</p>
+                    <p class="image-caption">Dec 15, 2025 - 10:30 AM</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <h4>Departed Origin Port</h4>
+                    <p>Port of Shanghai, China</p>
+                    <p class="image-caption">Dec 20, 2025 - 3:15 PM</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <h4>In Transit</h4>
+                    <p>On vessel MSC RACHEL</p>
+                    <p class="image-caption">Dec 20, 2025 - Jan 10, 2026</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <h4>Arrived Destination Port</h4>
+                    <p>Tema Port, Ghana</p>
+                    <p class="image-caption">Jan 15, 2026 - 9:45 AM</p>
+                </div>
+                
+                <div class="timeline-item inactive">
+                    <div class="timeline-number">5</div>
+                    <h4>Out for Delivery</h4>
+                    <p>Expected Jan 18-20, 2026</p>
+                    <p class="image-caption">Status: Pending customs clearance</p>
+                </div>
+            </div>
+            <p class="image-caption text-center">Figure 4.1: Sample tracking timeline for sea freight shipment</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tracking Support</h3>
+                    <p>24/7 tracking available online. For urgent inquiries, contact our support team.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Tracking Dept</h3>
+                    <p><i class="fas fa-phone"></i> +233 54 127 9285</p>
+                    <p><i class="fas fa-envelope"></i> tracking@ofaktrading.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Mobile App</h3>
+                    <p>Track your shipments on the go with our mobile app (coming soon).</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Ofak Trading Company. Real-time tracking powered by Ofak Logistics.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
